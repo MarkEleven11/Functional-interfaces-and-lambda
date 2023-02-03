@@ -79,12 +79,7 @@ public class Main {
         // Напишите метод ternaryOperator, который из них построит новую функцию, возвращающую значение функции ifTrue,
         // если предикат выполнен, и значение ifFalse иначе.
         System.out.println("Задание 5");
-//        public static <T, U> Function<T, U> ternaryOperator(
-//                Predicate<? super T> predicate,
-//                Function<? super T, ? extends U> ifTrue,
-//                Function<? super T, ? extends U> ifFalse) {
-//
-//        t -> predicate.test(t) ? ifTrue.apply(t) : ifFalse.apply(t);
-//        }
+
+        System.out.println("t -> predicate.test(t) ? ifTrue.apply(t) : ifFalse.apply(t);");
     }
 }
