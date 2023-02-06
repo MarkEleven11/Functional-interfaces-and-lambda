@@ -80,6 +80,13 @@ public class Main {
         // если предикат выполнен, и значение ifFalse иначе.
         System.out.println("Задание 5");
 
-        System.out.println("t -> predicate.test(t) ? ifTrue.apply(t) : ifFalse.apply(t);");
     }
+
+    public static <T, U> Function<T, U> ternaryOperator(
+            Predicate<? super T> condition,
+            Function<? super T, ? extends U> ifTrue,
+            Function<? super T, ? extends U> ifFalse) {
+    return     t -> condition.test(t) ? ifTrue.apply(t) : ifFalse.apply(t);}
+
+
 }
